@@ -1,0 +1,77 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNZGio5koR9AYFkUEcE3lYT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ExequielComia/OOP-58003-/blob/main/PrelimExamRevised\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "id": "wDagUGCVEyFN",
+        "outputId": "9d6a493e-c166-472d-a60d-277c81ec95c4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Full Name: Exequiel Osias O.Comia\n",
+            "Student Number: 20211150\n",
+            "Age: 19\n",
+            "School: Adamson University\n",
+            "Course: B.S. Computer Engineering\n",
+            "None\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Student:\n",
+        "  def __init__(self, full_name, student_number, age, school, course):\n",
+        "    self.full_name = full_name\n",
+        "    self.student_number = student_number\n",
+        "    self.age = age\n",
+        "    self.school = school\n",
+        "    self.course = course\n",
+        "  def description(self):\n",
+        "    return self.full_name, self.student_number, self.age, self.school, self.course\n",
+        "  \n",
+        "  def display(self):\n",
+        "    print(\"Full Name:\", self.full_name)\n",
+        "    print(\"Student Number:\" , self.student_number)\n",
+        "    print(\"Age:\" , self.age)\n",
+        "    print(\"School:\", self.school)\n",
+        "    print(\"Course:\" , self.course)\n",
+        "name1 = Student(\"Exequiel Osias O.Comia\", \"20211150\", \"19\", \"Adamson University\", \"B.S. Computer Engineering\")\n",
+        "print(name1.display())"
+      ]
+    }
+  ]
+}
